@@ -1,7 +1,7 @@
-fastapi==0.95.2
+fastapi
 uvicorn
-Pillow==9.5.0
+Pillow
 numpy
-tensorflow==2.12.0
+tensorflow
 python-multipart
 h5py
