@@ -9,7 +9,7 @@ import h5py
 app = FastAPI()
 
 # Load the pre-trained model
-model = load_model('/app/mymodel.h5')  # Adjust the path as necessary
+model = load_model('code/app/mymodel.h5')  # Adjust the path as necessary
 
 # Class labels for prediction
 class_names = np.array(['Fractured', 'Not Fractured'])
