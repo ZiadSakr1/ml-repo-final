@@ -28,7 +28,7 @@ jobs:
           context: .
           file: Dockers/Dockerfile
           push: true
-          tags: ${{ secrets.ACR_LOGIN_SERVER }}/ml-api:latest
+          tags: ziadsakr/testapi:test
 
   deploy:
     runs-on: ubuntu-latest
