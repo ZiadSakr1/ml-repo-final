@@ -35,12 +35,12 @@ jobs:
     needs: build
 
     steps:
-      - name: Azure Login
+      - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_9FBDE08064C442C8AE71A4E1B953C2DC }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A24694A3673A4476A0399BD42C3F7F15 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5D96A25E72C84DF3AD920DE066A978D7 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3F5170C2C8DD4C2DB956DECCF7C6782B }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9FC6D6E48F7D49ECAA5686A1735A67D6 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_0894749B96FA4CA4A8478213CCBF9561 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-container-deploy@v1
