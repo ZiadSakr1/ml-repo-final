@@ -43,7 +43,7 @@ jobs:
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5D96A25E72C84DF3AD920DE066A978D7 }}
 
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-container-deploy@v2
+        uses: azure/webapps-container-deploy@v1
         with:
           app-name: 'ML--API'
           images: ${{ secrets.ACR_LOGIN_SERVER }}/ml-api:latest
