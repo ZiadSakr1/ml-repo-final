@@ -75,4 +75,7 @@ jobs:
         with:
           app-name: 'test0App'
           slot-name: 'Production'
+      - name: Configure Startup Command
+        run: |
+          az webapp config set --resource-group GraduationProject --name test0App --startup-file 'uvicorn app.server:app --host 0.0.0.0 --port 8000'
           
