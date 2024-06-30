@@ -25,7 +25,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: Dockers/Dockerfile
+          context: .
+          file: Dockers/Dockerfile
           push: true
           tags: ${{ secrets.ACR_LOGIN_SERVER }}/ml-api:latest
 
