@@ -14,7 +14,7 @@ jobs:
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ AZUREAPPSERVICE_SUBSCRIPTIONID_64D2372BBE7940208F7316B7EEB6B941 }}
+          subscription-id: cb32306e-9f2e-442f-92a6-9d18ff546249
   
       - name: 'Run az commands'
         run: |
